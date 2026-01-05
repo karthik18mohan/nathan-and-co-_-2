@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #c5a065;
+  --heading-font: 'Merriweather', serif;
+  --body-font: 'Open Sans', sans-serif;
+  --text-dark: #222222;
+  --text-muted: #444444;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-muted);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.page-hero {
+  padding: 3rem 0 1.5rem;
+}
+
+.sidebar {
+  background-color: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.sidebar .nav-link {
+  color: var(--text-muted);
+}
+
+.sidebar .nav-link.active {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.icon-box {
+  border: 1px solid #e5e5e5;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.service-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.service-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.newsroom-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 0;
+}
+
+.newsroom-item:last-child {
+  border-bottom: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #00284d;
+  border-color: #00284d;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.location-grid a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 2.5rem 0;
+}
+
+.address-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.address-card.highlight {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(197, 160, 101, 0.2);
+}
+
+.team-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.form-section {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: 2rem;
+  }
+}
